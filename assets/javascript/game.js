@@ -37,9 +37,9 @@ document.onkeyup = function (event) {
 			console.log(guess);
 			console.log(guessArray);
 		}
-// Need to show the wins, replaceDash, guess, and guessArray in HTML.
+// Need to show the wins, replaceDash, guess, chances, and guessArray in HTML.
 // Need to figure out how to check for the same letter multiple times.
-	   
+// Need to figure out how to define a win.   
 	
 
 }
