@@ -14,10 +14,11 @@ var wins = 0;
 var chances = 10;
 // Create a variable counting how many letters are left unguessed
 var remainingLetters = toBeGuessed.length;
+var guessArray = [];
 // Game itself
 document.onkeyup = function(event) {
 	var letterGuess = event.key;
-	var guessArray = [];
+	// var guessArray = [];
 	guessArray.push(letterGuess);
 	if(toBeGuessed.includes(letterGuess) === false) {
 		chances = chances - 1;
@@ -29,24 +30,18 @@ document.onkeyup = function(event) {
 				;
 			}
 		}
-	}
-	$(document).ready(function(){
-		// $("#answer-array").text("The word " + answerArray);
-		var answerDiv = $("#answer-array");
-		for (var k = 0; k < answerArray.length; k++) {
-			var finalAnswerDiv = $(answerArray[k]);
-			answerDiv.append(finalAnswerDiv)
-		}
-		$("#letter-guess").text("Your guess " + letterGuess);
-		$("#guess-array").text("Your old guesses " + guessArray);
-		$("#chances").text("Chances you have left " + chances);
-
-	});
+	
+	
 
 
-	console.log(answerArray)
+	console.log(answerArray);
 	console.log(letterGuess);
 	console.log(guessArray);
 	console.log(chances);
-	console.log(remainingLetters)
-}
+	console.log(remainingLetters);
+};
+};
+
+
+		
+	
