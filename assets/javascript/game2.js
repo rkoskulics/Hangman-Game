@@ -31,10 +31,16 @@ document.onkeyup = function(event) {
 		}
 	}
 	$(document).ready(function(){
-		$("#answer-array").text("The word " + answerArray);
+		// $("#answer-array").text("The word " + answerArray);
+		var answerDiv = $("#answer-array");
+		for (var k = 0; k < answerArray.length; k++) {
+			var finalAnswerDiv = $(answerArray[k]);
+			answerDiv.append(finalAnswerDiv)
+		}
 		$("#letter-guess").text("Your guess " + letterGuess);
 		$("#guess-array").text("Your old guesses " + guessArray);
 		$("#chances").text("Chances you have left " + chances);
+
 	});
 
 
