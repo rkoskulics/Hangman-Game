@@ -1,5 +1,5 @@
 // Create an array with the potential answers
-var finalAnswers = ["pollen", "kitten", "conspiracy", "assassination", "outlet", "quixotic", "fart", ];
+var finalAnswers = ["bookkeeper", "bookkeepers" ];
 // Randomly choose an item in the array and assign it to a variable
 var toBeGuessed = finalAnswers[Math.floor(Math.random() * finalAnswers.length)];
 // Create a new string with the number of underscores in the variable called emptyGuess
@@ -30,9 +30,12 @@ document.onkeyup = function(event) {
 				remainingLetters = remainingLetters - 1;
 				;
 				if(remainingLetters === 0) {
-					document.getElementById("outcome").innerHTML = "You Win! Reload to Try Again!" 
+					document.getElementById("outcome").innerHTML = "You Win! Reload to try Again!";
+					wins = wins + 1; 
+					document.getElementById("outcome").innerHTML = "Wins: " + wins;
+
 				}else if(chances <= 0) {
-					document.getElementById("outcome").innerHTML = "You Lose: Reload to Try Again!"
+					document.getElementById("outcome").innerHTML = "You Lose: Reload to try Again!";
 
 				}
 			}
