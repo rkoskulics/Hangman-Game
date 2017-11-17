@@ -1,5 +1,5 @@
 // Create an array with the potential answers
-var finalAnswers = ["bookkeeper", "bookkeepers" ];
+var finalAnswers = ["quixotic", "cola", "turbulent", "ontology", "organism", "cat", "toxicology", "formula", "kitten", "puppy" ];
 // Randomly choose an item in the array and assign it to a variable
 var toBeGuessed = finalAnswers[Math.floor(Math.random() * finalAnswers.length)];
 // Create a new string with the number of underscores in the variable called emptyGuess
